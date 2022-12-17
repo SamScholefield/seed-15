@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { SeedCoreComponent } from './seed-core.component'
+import { HeaderComponent } from './header.component'
 
-describe('SeedCoreComponent', () => {
-  let component: SeedCoreComponent
-  let fixture: ComponentFixture<SeedCoreComponent>
+describe('HeaderComponent', () => {
+  let component: HeaderComponent
+  let fixture: ComponentFixture<HeaderComponent>
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [SeedCoreComponent],
+      declarations: [HeaderComponent],
     }).compileComponents()
 
-    fixture = TestBed.createComponent(SeedCoreComponent)
+    fixture = TestBed.createComponent(HeaderComponent)
     component = fixture.componentInstance
     fixture.detectChanges()
   })

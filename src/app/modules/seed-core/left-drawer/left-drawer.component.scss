@@ -1,0 +1,7 @@
+div.left-drawer-container {
+  min-width: var(--left-drawer-width);
+  min-height: 100%;
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,6 @@
+:root {
+    --left-drawer-width: 320px;
+    --header-bar-height: 64px;
+    --utility-bar-height: 56px;
+    --header-area-height: calc(var(--header-bar-height) + var(--utility-bar-height));
+}

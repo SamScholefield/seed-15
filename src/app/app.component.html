@@ -1,1 +1,19 @@
-<router-outlet></router-outlet>
+<div class="mat-app-background">
+  <seed-header></seed-header>
+  <mat-sidenav-container [hasBackdrop]="true">
+    <mat-sidenav mode="side" position="start" restoreFocus="true" fixedInViewport="true" [opened]="isLeftDrawerOpen">
+      <seed-left-drawer></seed-left-drawer>
+    </mat-sidenav>
+    <mat-sidenav-content fullscreen>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+    <mat-sidenav
+      mode="over"
+      position="end"
+      restoreFocus="true"
+      fixedInViewport="true"
+      disableClose="true"
+      [opened]="isRightDrawerOpen">
+    </mat-sidenav>
+  </mat-sidenav-container>
+</div>

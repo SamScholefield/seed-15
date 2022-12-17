@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { SeedCoreComponent } from './seed-core.component'
+import { LeftDrawerComponent } from './left-drawer.component'
 
-describe('SeedCoreComponent', () => {
-  let component: SeedCoreComponent
-  let fixture: ComponentFixture<SeedCoreComponent>
+describe('LeftDrawerComponent', () => {
+  let component: LeftDrawerComponent
+  let fixture: ComponentFixture<LeftDrawerComponent>
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [SeedCoreComponent],
+      declarations: [LeftDrawerComponent],
     }).compileComponents()
 
-    fixture = TestBed.createComponent(SeedCoreComponent)
+    fixture = TestBed.createComponent(LeftDrawerComponent)
     component = fixture.componentInstance
     fixture.detectChanges()
   })

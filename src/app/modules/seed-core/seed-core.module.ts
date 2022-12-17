@@ -1,19 +1,18 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core'
+import { CommonModule } from '@angular/common'
 
-import { SeedCoreRoutingModule } from './seed-core-routing.module';
-import { SeedCoreComponent } from './seed-core.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-
+import { SeedCoreRoutingModule } from './seed-core-routing.module'
+import { SeedCoreComponent } from './seed-core.component'
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component'
+import { HeaderComponent } from './header/header.component'
+import { MatToolbarModule } from '@angular/material/toolbar'
+import { MatButtonModule } from '@angular/material/button'
+import { MatIconModule } from '@angular/material/icon'
+import { LeftDrawerComponent } from './left-drawer/left-drawer.component'
 
 @NgModule({
-  declarations: [
-    SeedCoreComponent,
-    PageNotFoundComponent
-  ],
-  imports: [
-    CommonModule,
-    SeedCoreRoutingModule
-  ]
+  declarations: [SeedCoreComponent, PageNotFoundComponent, HeaderComponent, LeftDrawerComponent],
+  imports: [CommonModule, SeedCoreRoutingModule, MatToolbarModule, MatButtonModule, MatIconModule],
+  exports: [HeaderComponent, LeftDrawerComponent],
 })
-export class SeedCoreModule { }
+export class SeedCoreModule {}
