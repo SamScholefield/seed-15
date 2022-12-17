@@ -104,8 +104,10 @@ $my-theme: mat.define-light-theme(
 @include mat.sidenav-theme($my-theme);
 // toolbar
 @include mat.toolbar-theme($my-theme);
-// button theme
+// button
 @include mat.button-theme($my-theme);
+// icon
+@include mat.icon-theme($my-theme);
 // button-toggle theme
 // @include mat.button-toggle-theme($app-light-theme);
 // form-field theme
