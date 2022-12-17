@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'app-seed-core',
+  selector: 'seed-core',
   templateUrl: './seed-core.component.html',
-  styleUrls: ['./seed-core.component.scss']
+  styleUrls: ['./seed-core.component.scss'],
 })
-export class SeedCoreComponent {
+export class SeedCoreComponent implements OnInit {
   ngOnInit(): void {
     console.log('seed-core init')
   }

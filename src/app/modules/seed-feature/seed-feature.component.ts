@@ -1,10 +1,8 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'
 
 @Component({
-  selector: 'app-seed-feature',
+  selector: 'seed-feature',
   templateUrl: './seed-feature.component.html',
-  styleUrls: ['./seed-feature.component.scss']
+  styleUrls: ['./seed-feature.component.scss'],
 })
-export class SeedFeatureComponent {
-
-}
+export class SeedFeatureComponent {}

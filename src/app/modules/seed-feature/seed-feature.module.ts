@@ -1,17 +1,11 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core'
+import { CommonModule } from '@angular/common'
 
-import { SeedFeatureRoutingModule } from './seed-feature-routing.module';
-import { SeedFeatureComponent } from './seed-feature.component';
-
+import { SeedFeatureRoutingModule } from './seed-feature-routing.module'
+import { SeedFeatureComponent } from './seed-feature.component'
 
 @NgModule({
-  declarations: [
-    SeedFeatureComponent
-  ],
-  imports: [
-    CommonModule,
-    SeedFeatureRoutingModule
-  ]
+  declarations: [SeedFeatureComponent],
+  imports: [CommonModule, SeedFeatureRoutingModule],
 })
-export class SeedFeatureModule { }
+export class SeedFeatureModule {}

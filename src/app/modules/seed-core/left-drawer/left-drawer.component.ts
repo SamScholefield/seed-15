@@ -1,10 +1,8 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'
 
 @Component({
   selector: 'seed-left-drawer',
   templateUrl: './left-drawer.component.html',
-  styleUrls: ['./left-drawer.component.scss']
+  styleUrls: ['./left-drawer.component.scss'],
 })
-export class LeftDrawerComponent {
-
-}
+export class LeftDrawerComponent {}

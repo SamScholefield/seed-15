@@ -1,0 +1,140 @@
+@use '@angular/material' as mat;
+@import './colors';
+@include mat.core();
+// font config
+// @include mat.core($fontConfig);
+
+// primary, accent, warn palettes
+$mat-primary: (
+  50: $primary-50,
+  100: $primary-100,
+  200: $primary-200,
+  300: $primary-300,
+  400: $primary-400,
+  500: $primary-500,
+  600: $primary-600,
+  700: $primary-700,
+  800: $primary-800,
+  900: $primary-900,
+  contrast: (
+    50: $primary-contrast-light,
+    100: $primary-contrast-light,
+    200: $primary-contrast-light,
+    300: $primary-contrast-light,
+    400: $primary-contrast,
+    500: $primary-contrast,
+    600: $primary-contrast,
+    700: $primary-contrast-dark,
+    800: $primary-contrast-dark,
+    900: $primary-contrast-dark,
+  ),
+);
+
+$app-primary: mat.define-palette($mat-primary);
+/*
+$mat-accent: (
+    50: #e8f6e7,
+    100: #c7e9c4,
+    200: #a3da9f,
+    300: #7dcd77,
+    400: #5ec258,
+    500: #44b63c,
+    600: #3aa733,
+    700: #2d9528,
+    800: #22831d,
+    900: #06640a,
+    contrast: (50: rgba(black, 0.87),
+        100: rgba(black, 0.87),
+        200: rgba(black, 0.87),
+        300: white,
+        400: white,
+        500: white,
+        600: white,
+        700: white,
+        800: white,
+        900: white,
+
+    ),
+);
+$app-accent: mat.define-palette($mat-accent);
+
+$mat-warn: (
+    50: #f7e6e4,
+    100: #ecc2bc,
+    200: #e09990,
+    300: #d37064,
+    400: #c95142,
+    500: #c03221,
+    600: #ba2d1d,
+    700: #b22618,
+    800: #aa1f14,
+    900: #9c130b,
+    contrast: (50: rgba(black, 0.87),
+        100: rgba(black, 0.87),
+        200: rgba(black, 0.87),
+        300: white,
+        400: white,
+        500: white,
+        600: white,
+        700: white,
+        800: white,
+        900: white,
+
+    ),
+);
+$app-warn: mat.define-palette($mat-warn); */
+
+$my-primary: mat.define-palette($mat-primary, 500);
+$my-accent: mat.define-palette(mat.$orange-palette, A200, A100, A400);
+
+$my-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $my-primary,
+      accent: $my-accent,
+    ),
+    density: 0,
+  )
+);
+// @include mat.all-component-themes($app-light-theme);
+/** To reduce bundle size only pass core and themes for used components **/
+// core
+@include mat.core-theme($my-theme);
+// sidenav
+@include mat.sidenav-theme($my-theme);
+// toolbar
+@include mat.toolbar-theme($my-theme);
+// button theme
+@include mat.button-theme($my-theme);
+// button-toggle theme
+// @include mat.button-toggle-theme($app-light-theme);
+// form-field theme
+/* @include mat.form-field-theme($app-light-theme);
+// select theme
+@include mat.select-theme($app-light-theme);
+// checkbox theme
+@include mat.checkbox-theme($app-light-theme);
+// radio theme
+@include mat.radio-theme($app-light-theme);
+// tab theme
+@include mat.tabs-theme($app-light-theme);
+// menu theme
+@include mat.menu-theme($app-light-theme);
+// icon theme
+@include mat.icon-theme($app-light-theme);
+// tooltip theme
+@include mat.tooltip-theme($app-light-theme);
+// progress spinner theme
+@include mat.progress-spinner-theme($app-light-theme);
+// progress bar theme
+@include mat.progress-bar-theme($app-light-theme);
+// slide-toggle theme
+@include mat.slide-toggle-theme($app-light-theme);
+// chips theme
+@include mat.chips-theme($app-light-theme);
+// datepicker theme
+@include mat.datepicker-theme($app-light-theme);
+// slider theme
+@include mat.slider-theme($app-light-theme);
+// badge theme
+@include mat.badge-theme($app-light-theme); */

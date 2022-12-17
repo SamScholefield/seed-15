@@ -1,0 +1,21 @@
+$white: #ffffff;
+$black: #000000;
+$black-1: #333333; // font
+$black-2: #75787b; // muted font
+$error: #c03221; // error
+
+
+/** Primary palette */
+$primary-50: #dff3ef;
+$primary-100: #b0e2d5;
+$primary-200: #7ccfbb;
+$primary-300: #44bba0;
+$primary-400: #00ac8c;
+$primary-500: #009d7a;
+$primary-600: #008f6d;
+$primary-700: #007f5e;
+$primary-800: #006f50;
+$primary-900: #005335;
+$primary-contrast-light: $black-1;
+$primary-contrast: $white;
+$primary-contrast-dark: $white;

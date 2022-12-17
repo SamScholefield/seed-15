@@ -1,23 +1,22 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { SeedCoreComponent } from './seed-core.component';
+import { SeedCoreComponent } from './seed-core.component'
 
 describe('SeedCoreComponent', () => {
-  let component: SeedCoreComponent;
-  let fixture: ComponentFixture<SeedCoreComponent>;
+  let component: SeedCoreComponent
+  let fixture: ComponentFixture<SeedCoreComponent>
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SeedCoreComponent ]
-    })
-    .compileComponents();
+      declarations: [SeedCoreComponent],
+    }).compileComponents()
 
-    fixture = TestBed.createComponent(SeedCoreComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+    fixture = TestBed.createComponent(SeedCoreComponent)
+    component = fixture.componentInstance
+    fixture.detectChanges()
+  })
 
   it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+    expect(component).toBeTruthy()
+  })
+})
