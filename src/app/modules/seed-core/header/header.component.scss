@@ -4,4 +4,10 @@ mat-toolbar.header-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+}
+
+div.theme-control {
+  display: flex;
+  flex-direction: row;
 }

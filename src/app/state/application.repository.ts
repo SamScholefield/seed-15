@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core'
 
 import { createStore, getRegistry, select, withProps } from '@ngneat/elf'
 import { localStorageStrategy, persistState } from '@ngneat/elf-persist-state'
-import { DefaultApplicationState } from '../shared/constants/DefaultApplicationState'
+import { DefaultApplicationState } from '../shared/constants'
 import { StoreKey } from '../shared/enums'
 import { ApplicationState } from '../shared/models'
 

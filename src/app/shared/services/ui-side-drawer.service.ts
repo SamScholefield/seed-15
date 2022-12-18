@@ -8,7 +8,7 @@ import { ApplicationStateRepository } from 'src/app/state/application.repository
 @Injectable({
   providedIn: 'root',
 })
-export class SideDrawerService {
+export class UiSideDrawerService {
   constructor(private appStore: ApplicationStateRepository) {
     this.stateSubscription
   }
