@@ -1,0 +1,18 @@
+{
+  "common": {
+    "ok": "OK",
+    "cancel": "Abbrechen",
+    "navigate-to": "navigieren zu {{ route }}"
+  },
+  "lang": {
+    "switch-title": "Sprache",
+    "en": {
+      "full": "Englisch",
+      "alpha2": "en"
+    },
+    "de": {
+      "full": "Deutsch",
+      "alpha2": "de"
+    }
+  }
+}

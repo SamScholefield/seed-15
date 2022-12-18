@@ -1,5 +1,5 @@
 import { Component } from '@angular/core'
-import { SeedAppRouting } from 'src/app/routes/app.routing'
+import { SeedAppRouting } from '../../routes/app.routing'
 
 @Component({
   selector: 'seed-core',

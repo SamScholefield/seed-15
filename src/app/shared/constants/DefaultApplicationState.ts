@@ -4,4 +4,5 @@ export const DefaultApplicationState: ApplicationState = {
   leftDrawerOpen: false,
   userClosedLeftDrawer: false,
   isDarkTheme: false,
+  lang: 'en',
 }

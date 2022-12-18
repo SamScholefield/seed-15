@@ -1,10 +1,11 @@
 import { Component } from '@angular/core'
 import { MatSlideToggleChange } from '@angular/material/slide-toggle'
 import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy'
-import { ThemeKey } from 'src/app/shared/enums'
-import { UiSideDrawerService } from 'src/app/shared/services/ui-side-drawer.service'
-import { UiThemeService } from 'src/app/shared/services/ui-theme.service'
-import { ApplicationStateRepository } from 'src/app/state/application.repository'
+import { TranslateService } from '@ngx-translate/core'
+import { StoreKey, ThemeKey } from '../../../shared/enums'
+import { UiSideDrawerService } from '../../../shared/services/ui-side-drawer.service'
+import { UiThemeService } from '../../../shared/services/ui-theme.service'
+import { ApplicationStateRepository } from '../../../state/application.repository'
 
 @UntilDestroy()
 @Component({
@@ -18,7 +19,8 @@ export class HeaderComponent {
   constructor(
     private appStore: ApplicationStateRepository,
     private sideDrawer: UiSideDrawerService,
-    private theme: UiThemeService
+    private theme: UiThemeService,
+    private translate: TranslateService
   ) {
     this.stateSubscription()
   }
@@ -32,10 +34,13 @@ export class HeaderComponent {
         this.theme.themeChange(ThemeKey.DARK)
         this.isDarkTheme = state.isDarkTheme
       }
+      /** set lang from state */
+      this.translate.use(state.lang)
     })
   }
 
   public toggleLeftDrawer(): void {
+    console.log('toggle drawer called')
     this.sideDrawer.toggleLeftChange()
   }
 
@@ -47,5 +52,17 @@ export class HeaderComponent {
       this.theme.themeChange(ThemeKey.LIGHT)
       this.isDarkTheme = false
     }
+  }
+
+  public setLang(locale: string): void {
+    console.log(locale)
+    this.translate.use(locale)
+    this.appStore.updateStore(StoreKey.APPLICATION, {
+      lang: locale,
+    })
+  }
+
+  get currentLang(): string {
+    return this.translate.currentLang
   }
 }

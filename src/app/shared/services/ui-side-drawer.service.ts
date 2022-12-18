@@ -3,7 +3,7 @@ import { take } from 'rxjs/operators'
 import { Injectable } from '@angular/core'
 
 import { StoreKey } from '../enums'
-import { ApplicationStateRepository } from 'src/app/state/application.repository'
+import { ApplicationStateRepository } from '../../state/application.repository'
 
 @Injectable({
   providedIn: 'root',
