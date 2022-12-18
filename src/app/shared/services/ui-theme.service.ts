@@ -1,6 +1,6 @@
 import { OverlayContainer } from '@angular/cdk/overlay'
 import { HostBinding, Injectable } from '@angular/core'
-import { ApplicationStateRepository } from 'src/app/state/application.repository'
+import { ApplicationStateRepository } from '../../state/application.repository'
 import { StoreKey, ThemeKey } from '../enums'
 
 @Injectable({

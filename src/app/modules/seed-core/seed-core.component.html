@@ -1,6 +1,8 @@
 <div class="page-container">
   I AM CORE
   <div>
-    <button mat-flat-button [routerLink]="['/' + AppRouting.PATH.FEATURE]" color="accent">go to feature</button>
+    <button mat-flat-button [routerLink]="['/' + AppRouting.PATH.FEATURE]" color="accent">
+      {{ 'common.navigate-to' | translate : { route: AppRouting.PATH.FEATURE } }}
+    </button>
   </div>
 </div>

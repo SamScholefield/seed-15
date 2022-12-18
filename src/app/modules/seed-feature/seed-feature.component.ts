@@ -1,5 +1,6 @@
 import { Component } from '@angular/core'
-import { SeedAppRouting } from 'src/app/routes/app.routing'
+import { SeedAppRouting } from '../../routes/app.routing'
+import { TranslateFakeLoader, TranslateLoader, TranslateModule } from '@ngx-translate/core'
 
 @Component({
   selector: 'seed-feature',

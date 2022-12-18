@@ -10,6 +10,8 @@ import { MatButtonModule } from '@angular/material/button'
 import { MatIconModule } from '@angular/material/icon'
 import { LeftDrawerComponent } from './left-drawer/left-drawer.component'
 import { MatSlideToggleModule } from '@angular/material/slide-toggle'
+import { MatMenuModule } from '@angular/material/menu'
+import { TranslateModule } from '@ngx-translate/core'
 
 @NgModule({
   declarations: [SeedCoreComponent, PageNotFoundComponent, HeaderComponent, LeftDrawerComponent],
@@ -20,6 +22,8 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle'
     MatButtonModule,
     MatIconModule,
     MatSlideToggleModule,
+    MatMenuModule,
+    TranslateModule.forChild(),
   ],
   exports: [HeaderComponent, LeftDrawerComponent],
 })
