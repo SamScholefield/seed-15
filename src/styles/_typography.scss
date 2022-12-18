@@ -1,0 +1,76 @@
+/* @use "@angular/material" as mat;
+@import "oeko-fonts";
+
+$fontConfig: (
+  display-4:
+    mat.define-typography-level(112px, 112px, 300, $font-main, -0.0134em),
+  display-3: mat.define-typography-level(56px, 56px, 400, $font-main, -0.0089em),
+  display-2: mat.define-typography-level(45px, 48px, 400, $font-main, 0em),
+  display-1: mat.define-typography-level(34px, 40px, 400, $font-main, 0.0074em),
+  headline:
+    mat.define-typography-level(
+      $h1-size,
+      $h1-line-height,
+      $h1-weight,
+      $font-main,
+      0em
+    ),
+  title:
+    mat.define-typography-level(
+      $h2-size,
+      $h2-line-height,
+      $h2-weight,
+      $font-main,
+      0.0075em
+    ),
+  subheading-2:
+    mat.define-typography-level(
+      $h3-size,
+      $h3-line-height,
+      $h3-weight,
+      $font-main,
+      0.0094em
+    ),
+  subheading-1:
+    mat.define-typography-level(
+      $h4-size,
+      $h4-line-height,
+      $h4-weight,
+      $font-main,
+      0.0067em
+    ),
+  body-2:
+    mat.define-typography-level(
+      $p2-size,
+      $p2-line-height,
+      $p2-weight,
+      $font-main,
+      0.0179em
+    ),
+  body-1:
+    mat.define-typography-level(
+      $p1-size,
+      $p1-line-height,
+      $p1-weight,
+      $font-main,
+      0.0179em
+    ),
+  button:
+    mat.define-typography-level(
+      $h4-size,
+      $h4-line-height,
+      $h4-weight,
+      $font-main,
+      0.0893em
+    ),
+  caption:
+    mat.define-typography-level(
+      $p3-size,
+      $p3-line-height,
+      $p3-weight,
+      $font-main,
+      0.0333em
+    ),
+  input: mat.define-typography-level($p1-size, 1, $p1-weight, $font-main, 0),
+);
+ */
