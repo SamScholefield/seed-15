@@ -9,10 +9,18 @@ import { MatToolbarModule } from '@angular/material/toolbar'
 import { MatButtonModule } from '@angular/material/button'
 import { MatIconModule } from '@angular/material/icon'
 import { LeftDrawerComponent } from './left-drawer/left-drawer.component'
+import { MatSlideToggleModule } from '@angular/material/slide-toggle'
 
 @NgModule({
   declarations: [SeedCoreComponent, PageNotFoundComponent, HeaderComponent, LeftDrawerComponent],
-  imports: [CommonModule, SeedCoreRoutingModule, MatToolbarModule, MatButtonModule, MatIconModule],
+  imports: [
+    CommonModule,
+    SeedCoreRoutingModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatIconModule,
+    MatSlideToggleModule,
+  ],
   exports: [HeaderComponent, LeftDrawerComponent],
 })
 export class SeedCoreModule {}
